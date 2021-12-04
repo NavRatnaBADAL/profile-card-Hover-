@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Created By Badalkeshri -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Profile Card Hover Animation | Badalkeshri</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <a href="#">
+            <img src="badal.jpg.jpeg" alt="">
+            </a>
+            <div class="title">
+               Nav Ratna Badal
+            </div>
+            <div class="place">
+               Bihar, India
+            </div>
+         </div>
+         <div class="content">
+            <p>
+               Java and python Lover <br>front-end developer
+            </p>
+            <div class="buttons">
+               <div class="btn">
+                  <button>Message</button>
+               </div>
+               <div class="btn">
+                  <button>Following</button>
+               </div>
+            </div>
+         </div>
+         <div class="icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100022805541505"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="https://github.com/NavRatnaBADAL"><span class="fab fa-github"></span></a></li>
+            <li><a href="https://www.instagram.com/badalkeshri810/"><span class="fab fa-instagram"></span></a></li>
+         </div>
+      </div>
+      <script>
+         const img = document.querySelector("img");
+         const icons = document.querySelector(".icons");
+         img.onclick = function(){
+           this.classList.toggle("active");
+           icons.classList.toggle("active");
+         }
+      </script>
+   </body>
+</html>
